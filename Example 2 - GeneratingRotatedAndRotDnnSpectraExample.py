@@ -62,14 +62,25 @@ PSArotD100,PSA180 = rotdnn(ccs1,ccs2,dt,dampratio,T,nn)
 
 plt.figure(figsize=(7.5,6.5))
 
+plt.plot(T,PSA180.T,linewidth=1,color='darkgray')
+plt.plot(To,dso,linewidth=2,color='navy',label='Target')
+plt.plot(To,1.1*dso,'--',linewidth=2,color='navy',label='1.1*Target')
+plt.plot(T,PSAccs1,color='darkmagenta',label='H1')
+plt.plot(T,PSAccs2,color='deeppink',label='H2')
+plt.plot(T,PSArotD100,color='darkred',label='RotD100')
+
+plt.legend(frameon=False,ncol=5, bbox_to_anchor=(0,1),loc='lower left')
+plt.xlim((0.01,10))
+plt.xlabel('T [s]')
+plt.ylabel('PSA [g]')
+plt.show()
+        
+#%%
+"""
 plt.semilogx(T,PSA180.T,linewidth=1,color='darkgray')
 plt.semilogx(To,dso,linewidth=2,color='navy',label='Target')
 plt.semilogx(To,1.1*dso,'--',linewidth=2,color='navy',label='1.1*Target')
 plt.semilogx(T,PSAccs1,color='darkmagenta',label='H1')
 plt.semilogx(T,PSAccs2,color='deeppink',label='H2')
 plt.semilogx(T,PSArotD100,color='darkred',label='RotD100')
-plt.legend(frameon=False,ncol=5, bbox_to_anchor=(0,1),loc='lower left')
-plt.xlim((0.01,10))
-plt.xlabel('T [s]')
-plt.ylabel('PSA [g]')
-        
+"""

@@ -54,7 +54,7 @@ nn = 100                   # percentile 100 for RotD100, 50 for RotD50, ...
                                                  baseline=1,plots=1)
                                                  
 headerinfo = 'accelerations in g, dt = ' + str(dt)
-np.savetxt('component1RotD100matched.txt',scc1,header=headerinfo)
-np.savetxt('component2RotD100matched.txt',scc2,header=headerinfo)
+np.savetxt('AAD-component1RotD100matched.txt',scc1,header=headerinfo)
+np.savetxt('AAD-component2RotD100matched.txt',scc2,header=headerinfo)
 
         

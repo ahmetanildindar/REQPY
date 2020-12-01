@@ -44,6 +44,6 @@ ccs,rms,misfit,cvel,cdespl,PSAccs,PSAs,T,sf = REQPY_single(s,fs,dso,To,
                                                     baseline=1,plots=1)
 
 headerinfo = 'accelerations in g, dt = ' + str(dt) 
-outname = 'REQPY' + '_' + eqname + '.txt'
+outname = 'AAD-REQPY' + '_' + eqname + '.txt'
 np.savetxt(outname,ccs,header=headerinfo)
 
