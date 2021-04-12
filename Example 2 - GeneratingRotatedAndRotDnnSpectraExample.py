@@ -48,7 +48,7 @@ dso = tso[:,1]             # original target spectrum psa
 ccs1,rms1,misfit1,cvel1,cdespl1,PSAccs1,PSAs1,T,sf1 = REQPY_single(s1,fs,dso,To,
                                                     T1=TL1,T2=TL2,zi=dampratio,
                                                     nit=15,NS=100,
-                                                    baseline=1,plots=0)
+                                                baseline=1,plots=0)
 
 ccs2,rms2,misfit2,cvel2,cdespl2,PSAccs2,PSAs2,T,sf2 = REQPY_single(s2,fs,dso,To,
                                                     T1=TL1,T2=TL2,zi=dampratio,
